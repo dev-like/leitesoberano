@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+    color: #fff;
+    background-color: rgba(188, 0, 0, .7);
+}
+
+html,
+body{
+    height: 100%;
+    background-color: #fcfcfc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    /*background-color: rgba(255, 12, 100, 0.1);*/
+}
+
+@media all and (min-width:576px) {}
+@media all and (min-width:768px) {}
+@media all and (min-width:992px) {}
+@media all and (min-width:1200px) {}

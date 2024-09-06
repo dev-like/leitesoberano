@@ -1,0 +1,53 @@
+footer{
+    padding: 280px 0 30px;
+    position: relative;
+    background: url('../images/rodape.svg') bottom center;
+    background-size: cover;
+    z-index: 2;
+}
+
+footer .logo-footer{
+    display: block;
+    margin: 0 auto 10px;
+}
+
+footer .sac{
+    color: #383994;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+footer .info{
+    color: #555;
+    font-size: 12px;
+    padding-top: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+footer .like{
+    margin-left: 4px;
+    margin-bottom: -6px;
+}
+
+footer .like:hover{
+    animation: like-mini 1s 1;
+}
+footer .achenos{
+  padding-top: 10px;
+}
+footer .achenos a{
+  text-decoration:none;
+  color: #555a64;
+}
+footer .achenos a:hover{
+  color: #ed2f33;
+
+}
+
+
+@media all and (min-width:768px) {
+    footer .logo-footer{
+        float: right;
+    }
+}

@@ -1,0 +1,107 @@
+html, body{
+    background: rgb(156,13,13);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(234,103,103,1) 0%,rgba(156,13,13,1) 100%);
+    background:    -moz-radial-gradient(center, ellipse cover, rgba(234,103,103,1) 0%, rgba(156,13,13,1) 100%);
+    background:         radial-gradient(ellipse at center, rgba(234,103,103,1) 0%,rgba(156,13,13,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68d7e7', endColorstr='#51949e',GradientType=1 );
+}
+
+div.produtos{
+    color: #333;
+    padding-top: 60px;
+}
+
+div.produtos div.content-box{
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 28px;
+    background-size: 100% 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+div.produtos h1{
+    line-height: 1;
+    font-size: 80px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(156,13,13);
+    font-family: 'Atlantic Bentley';
+}
+
+div.produtos div.content-box h2{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+div.produtos div.content-box .infos{
+    text-align: center;
+}
+
+div.produtos div.content-box .infos strong{
+    margin: 10px 4px;
+    display: block;
+}
+
+div.produtos div.content-box .infos img{
+    margin-bottom: -5px;
+}
+
+div.produtos div.content-box ul{
+  padding-left: 25px;
+}
+div.produtos div.content-box ol{
+  padding-left: 25px;
+}
+
+div.produtos .img-receita{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: -28px;
+    border-radius: 28px;
+    z-index: 1;
+}
+
+@media all and (min-width:425px) {
+    div.produtos div.content-box .infos strong{
+        margin: 0px 4px;
+        display: inline-block;
+    }
+
+    div.produtos div.content-box p{
+        line-height: 1.5;
+        column-count: 2;
+    }
+
+    div.produtos .img-receita{
+        width: 65%;
+    }
+}
+
+@media all and (min-width:992px) {
+    div.produtos{
+        padding: 0px 120px 80px;
+    }
+
+    div.produtos div.content-box{
+        padding: 32px;
+    }
+
+    div.produtos div.content-box.titulo{
+        padding: 150px 32px 10px;
+    }
+
+    div.produtos div.content-box .infos{
+        margin-bottom: 26px;
+    }
+
+    div.produtos .img-receita{
+        width: 50%;
+        bottom: -128px;
+    }
+}

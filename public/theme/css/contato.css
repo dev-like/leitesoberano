@@ -1,0 +1,121 @@
+html, body{
+    background: rgb(56,57,148);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(73,74,190,1) 0%,rgba(56,57,148,1) 100%);
+    background:    -moz-radial-gradient(center, ellipse cover, rgba(73,74,190,1) 0%, rgba(56,57,148,1) 100%);
+    background:         radial-gradient(ellipse at center, rgba(73,74,190,1) 0%,rgba(56,57,148,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#494abe', endColorstr='#383994',GradientType=1 );
+}
+
+.contato{
+    padding: 90px 0 0;
+}
+
+.contato .envelope{
+    width: 652px;
+    max-width: 96%;
+    height: 544px;
+    margin: 0px auto;
+    position: relative;
+    background: url('../images/envelope-mobile.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.contato .envelope h1{
+    color: #37399a;
+    line-height: 1;
+    font-size: 60px;
+    font-weight: 400;
+    font-family: 'Atlantic Bentley';
+    text-align: center;
+    padding-top: 48px;
+}
+
+.contato .envelope .msg{
+    width: 360px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.contato .envelope .side-left,
+.contato .envelope .side-right{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contato .envelope label{
+    color: #999;
+    display: block;
+    font-size: 12px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px 10px 0;
+    margin-bottom: -20px;
+    background-color: #ededed;
+    position: relative;
+    z-index: 1;
+}
+
+.contato .envelope textarea,
+.contato .envelope input{
+    color: #777;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 25px 10px 10px;
+    background-color: #ededed;
+}
+
+.contato .envelope textarea{
+    height: 100px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100px;
+    min-height: 100px;
+}
+
+.contato .envelope button{
+    color: #fff;
+    border: none;
+    outline: none;
+    line-height: 1;
+    font-size: 12px;
+    padding: 25px 52px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 100%;
+    background-color: #37399a;
+}
+
+@media all and (min-width:680px) {
+    .contato{
+        padding: 130px 0 80px;
+    }
+
+    .contato .envelope{
+        background: url('../images/envelope.png') no-repeat center center;
+    }
+
+    .contato .envelope .side-left{
+        width: auto;
+        position: absolute;
+        left: 70px;
+        right: 50%;
+        bottom: 38px;
+    }
+
+    .contato .envelope .side-right{
+        width: auto;
+        position: absolute;
+        left: 50%;
+        right: 70px;
+        bottom: 38px;
+    }
+
+    .contato .envelope button{
+        margin: 0;
+        width: auto;
+        float: right;
+    }
+}

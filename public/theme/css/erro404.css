@@ -1,0 +1,22 @@
+html, body{
+    background: rgb(210,210,220);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(210,210,220,1) 0%,rgba(255,255,255,1) 100%);
+    background:    -moz-radial-gradient(center, ellipse cover, rgba(210,210,220,1) 0%, rgba(255,255,255,1) 100%);
+    background:         radial-gradient(ellipse at center, rgba(210,210,220,1) 0%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#494abe', endColorstr='#383994',GradientType=1 );
+}
+
+.erro404{
+    padding: 90px 0 0;
+    text-align: center;
+}
+
+.erro404 img{
+    max-width: 90%;
+}
+
+@media all and (min-width:680px) {
+    .erro404{
+        padding: 130px 0 80px;
+    }
+}

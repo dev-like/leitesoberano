@@ -1,0 +1,132 @@
+*,
+*:after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.tt-grid {
+	position: relative;
+	margin: 20px auto;
+	padding: 0;
+	max-width: 960px;
+	list-style: none;
+	text-align: center;
+	font-size: 0px;
+}
+
+.tt-grid:before,
+.tt-grid:after {
+	display: table;
+	content: ' ';
+}
+
+.tt-grid:after {
+	clear: both;
+}
+
+.tt-grid li {
+	position: relative;
+	display: inline-block;
+	margin: 10px;
+	width: 300px;
+	height: 225px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.tt-grid li a,
+.tt-grid li a img {
+	display: block;
+	margin: 0 auto;
+	border: none;
+}
+
+.tt-grid li a {
+	background: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.tt-grid li a:nth-child(2) {
+	z-index: 1;
+	visibility: hidden;
+}
+
+/* Navigation */
+div.galeria{
+	position: relative !important;
+	background-color: transparent !important;
+	box-shadow: none;
+}
+.tt-grid-wrapper div.galeria {
+	text-align: center;
+}
+
+.tt-grid-wrapper div.galeria a {
+	display: inline-block;
+	margin: 0 8px;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: #fff;
+	cursor: pointer;
+	opacity: 0.7;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.touch .tt-grid-wrapper div.galeria a {
+	width: 30px;
+	height: 30px;
+}
+
+.tt-grid-wrapper div.galeria a:hover {
+	opacity: 1;
+}
+
+.tt-grid-wrapper div.galeria a.tt-current {
+	opacity: 1;
+	box-shadow: 0 0 0 5px rgba(255,255,255,0.4);
+}
+
+.tt-grid.tt-effect-active li a {
+	pointer-events: none;
+}
+
+/* Individual grid effects */
+
+/* Superscale */
+.tt-effect-superscale.tt-effect-active li:not(.tt-empty) a:first-child {
+	-webkit-animation: scaleDown 0.6s ease-in-out forwards;
+	animation: scaleDown 0.6s ease-in-out forwards;
+}
+
+.tt-effect-superscale.tt-effect-active li a:nth-child(2),
+.tt-effect-superscale.tt-effect-active li.tt-empty a {
+	opacity: 0;
+	-webkit-animation: scaleIn 0.6s ease-in-out forwards;
+	animation: scaleIn 0.6s ease-in-out forwards;
+}
+
+/* Animations */
+
+@-webkit-keyframes scaleDown {
+	100% { opacity: 0; -webkit-transform: scale(0); }
+}
+
+@keyframes scaleDown {
+	100% { opacity: 0; transform: scale(0); }
+}
+
+@-webkit-keyframes scaleIn {
+	0% { opacity: 0; -webkit-transform: scale(1.2); }
+	100% { visibility: visible; opacity: 1; -webkit-transform: scale(1); }
+}
+
+@keyframes scaleIn {
+	0% { opacity: 0; transform: scale(1.2); }
+	100% { visibility: visible; opacity: 1; transform: scale(1); }
+}

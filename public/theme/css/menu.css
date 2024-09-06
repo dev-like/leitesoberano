@@ -1,0 +1,155 @@
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 8px 0;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(240, 240, 240, 0.5);
+    z-index: 100;
+}
+
+nav .menu-icon{
+    float: left;
+    margin-top: 8px;
+    width: 28px;
+    height: 28px;
+    position: relative;
+}
+
+nav .menu-icon .menu-line{
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #37399a;
+    transition: all ease .2s;
+}
+
+nav .menu-icon .menu-line:nth-child(1){ top: 0px; }
+nav .menu-icon .menu-line:nth-child(2){ top: 8px; }
+nav .menu-icon .menu-line:nth-child(3){ top: 16px; }
+
+nav .menu-icon.active .menu-line:nth-child(1){
+    top: 8px;
+    width: 28px;
+    transform: rotate(90deg);
+}
+
+nav .menu-icon.active .menu-line:nth-child(2){
+    top: 6px;
+    width: 20px;
+    transform-origin: left top;
+    transform: rotate(-45deg);
+}
+
+nav .menu-icon.active .menu-line:nth-child(3){
+    top: 6px;
+    right: 0;
+    width: 20px;
+    transform-origin: right top;
+    transform: rotate(45deg);
+}
+
+nav .logo{
+    width: 160px;
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul{
+    display: none;
+    margin: 10px 0;
+    word-spacing: 212px;
+}
+
+nav ul li{
+    color: #37399a;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 16px;
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+
+nav ul li.active a{
+    color: #ff2a30;
+    display: inline-block;
+    border-bottom: 2px solid #ff2a30;
+}
+
+nav .redessociais{
+    display: none;
+    word-spacing: 28px;
+}
+
+nav .redessociais a{
+    color: inherit;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: -18px;
+}
+
+@media all and (min-width:363px) {
+  nav ul{
+    word-spacing: 10px;
+  }
+}
+
+@media all and (min-width:768px) {
+    nav .logo{
+        float: left;
+        width: 142px;
+    }
+    nav .menu-icon{
+        display: none;
+    }
+    nav ul{
+        margin: 0;
+        display: block !important;
+        padding-left: 50px;
+    }
+    nav .redessociais{
+        float: right;
+        display: block !important;
+        text-align: right;
+    }
+    nav ul li{
+        font-size: 11px;
+    }
+
+}
+
+@media all and (min-width:992px) {
+    nav ul{
+        word-spacing: 20px;
+    }
+    nav .redessociais{
+        word-spacing: 20px;
+    }
+    nav .redessociais a{
+        margin-right: -18px;
+    }
+    nav .logo{
+        width: 160px;
+    }
+    nav ul li{
+        font-size: 13px;
+    }
+}
+
+@media all and (min-width:1200px) {
+    nav ul{
+        word-spacing: 42px;
+    }
+    nav .redessociais a{
+        margin-right: 0;
+    }
+}

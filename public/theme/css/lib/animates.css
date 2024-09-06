@@ -1,0 +1,35 @@
+@-webkit-keyframes like-mini {
+    40%{
+        -webkit-transform: rotate(30deg) scale(1.15);
+            -ms-transform: rotate(30deg) scale(1.15);
+                transform: rotate(30deg) scale(1.15);
+    }
+    70%{
+        -webkit-transform: rotate(-20deg) scale(.9,.9);
+            -ms-transform: rotate(-20deg) scale(.9,.9);
+                transform: rotate(-20deg) scale(.9,.9);
+    }
+    90%{
+        -webkit-transform: rotate(5deg);
+            -ms-transform: rotate(5deg);
+                transform: rotate(5deg);
+    }
+}
+
+@keyframes like-mini {
+    40%{
+        -webkit-transform: rotate(30deg) scale(1.15);
+            -ms-transform: rotate(30deg) scale(1.15);
+                transform: rotate(30deg) scale(1.15);
+    }
+    70%{
+        -webkit-transform: rotate(-20deg) scale(.9,.9);
+            -ms-transform: rotate(-20deg) scale(.9,.9);
+                transform: rotate(-20deg) scale(.9,.9);
+    }
+    90%{
+        -webkit-transform: rotate(5deg);
+            -ms-transform: rotate(5deg);
+                transform: rotate(5deg);
+    }
+}

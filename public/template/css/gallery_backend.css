@@ -1,0 +1,48 @@
+#gallery-images{
+  height: 120px;
+  width: 100%;
+}
+#gallery-images ul{
+  margin: 0px;
+  padding: 0px;
+  margin-left: 20px;
+}
+
+#gallery-images ul li {
+  list-style:none;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  padding-right: 20px;
+}
+
+#gallery-images img{
+  display: block;
+  height: 120px;
+  background: no-repeat center center;
+  background-size: contain;
+  border: 1px solid black;
+  margin-top: 10px;
+
+
+}
+
+#gallery-videos ul{
+  margin: 0px;
+  padding: 0px;
+  margin-left: 50px;
+}
+
+#gallery-videos ul li {
+  list-style:none;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  padding-right: 20px;
+}
+
+#gallery-videos img{
+  width:300px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}

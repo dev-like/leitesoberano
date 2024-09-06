@@ -1,0 +1,30 @@
+.pagination li a{
+  padding:0;
+  line-height: 0px;
+}
+.pagination li {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    height: 40px;
+}
+
+.pagination li.active {
+    background-color: #26a69a;
+    color: white;
+    padding: 8px 16px;
+    border: 1px solid #26a69a;
+}
+
+.pagination li:hover:not(.active) {background-color: #ddd;}
+
+.pagination li:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination li:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

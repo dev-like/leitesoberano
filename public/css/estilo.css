@@ -1,0 +1,38 @@
+.standard-top-spacing{
+  margin-top: 25px;
+}
+.page-item.active .page-link {
+    background: #3f82a0 !important;
+    border: #3f82a0 !important;
+}
+.pagination > li > a:hover {
+    background-color: #e59937 !important;
+    color: #fff !important;
+    border-color: #e59937 !important;
+}
+div.dataTables_wrapper div.dataTables_filter{
+  text-align: left !important;
+}
+div.dataTables_wrapper div.dataTables_filter label, div.dataTables_wrapper div.dataTables_filter input, .tab-content, ul.nav.nav-pills.navtab-bg.nav-justified{
+  width: 100% !important;
+}
+.btn-group{
+  display: inherit !important;
+}
+ul.nav.nav-pills.navtab-bg.nav-justified {
+    background: #fff !important;
+}
+.nav-pills .nav-link.active {
+    background: #b37731 !important;
+}
+.nav-pills > li > a {
+    font-size: 22px !important;
+}
+.btn-primary {
+    background-color: #707273;
+    border: 1px solid #707273;
+}
+.btn-primary:hover {
+    background-color: #e49837;
+    border: 1px solid #e49837;
+}

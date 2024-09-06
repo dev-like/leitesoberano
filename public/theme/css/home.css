@@ -1,0 +1,357 @@
+/* Banner Inicial com Interação */
+header{
+    height: 100%;
+    min-height: 620px;
+    position: relative;
+    background-color: #68d7e7;
+    background-image: url('../images/bg-header.png');
+}
+
+header::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/embalagens.svg') no-repeat center 101%;
+    background-size: 100% auto;
+}
+
+header .content{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: -280px;
+    z-index: 2;
+}
+
+header .container{
+    position: relative;
+}
+
+header .content .item{
+    width: 100%;
+    height: 560px;
+}
+
+header .content .item .img-produto img{
+    width: 50%;
+    display: block;
+    margin: 32px auto 0;
+}
+
+header .content .item span{
+    color: #fff;
+    display: block;
+    font-size: 82px;
+    text-align: center;
+    font-family: 'Atlantic Bentley';
+    text-shadow: 1px 1px 1px rgba(200, 200, 200, 0.7), 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+header .content .item a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 6px 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: #ff1b21;
+    box-shadow: 0 1px 2px rgba(200, 200, 200, 0.7);
+    transition: all .2s linear;
+}
+
+header .content .item a:hover{
+    transform: scale(1.05);
+}
+
+header .carousel-produtos .seta-receita{
+    display: none !important;
+    width: 40px;
+    height: 60px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    top: 45%;
+    z-index: 10;
+    -webkit-transition: all 0.1s linear;
+       -moz-transition: all 0.1s linear;
+        -ms-transition: all 0.1s linear;
+         -o-transition: all 0.1s linear;
+}
+
+header .carousel-produtos .seta-receita:hover{
+    -webkit-transform: scale(1.05);
+       -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+         -o-transform: scale(1.05);
+}
+
+header .carousel-produtos .seta-receita.prev-receita{
+    left: -30px;
+    border-radius: 30px 0 0 30px;
+    background-image: url('../images/seta-prev-prod.png');
+}
+
+header .carousel-produtos .seta-receita.next-receita{
+    right: -30px;
+    border-radius: 0 30px 30px 0;
+    background-image: url('../images/seta-next-prod.png');
+}
+
+
+@media all and (min-width:768px) {
+    header::after{
+        background-position: center 125%;
+    }
+
+    header .carousel-produtos .seta-receita{
+        display: block !important;
+    }
+
+    header .content .item .img-produto{
+        width: 45%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    header .content .item .img-produto img{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header .content .item .img-produto::after{
+        content: '';
+        border-radius: 50%;
+        display: block;
+        width: 50%;
+        height: 50px;
+        opacity: .8;
+        margin: 0 auto;
+        background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.37) 0%, rgba(0,0,0,0.37) 1%, rgba(0,0,0,0) 64%, rgba(0,0,0,0) 99%, rgba(0,0,0,0) 100%);
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.37) 0%,rgba(0,0,0,0.37) 1%,rgba(0,0,0,0) 64%,rgba(0,0,0,0) 99%,rgba(0,0,0,0) 100%);
+        background: radial-gradient(ellipse at center, rgba(0,0,0,0.37) 0%,rgba(0,0,0,0.37) 1%,rgba(0,0,0,0) 64%,rgba(0,0,0,0) 99%,rgba(0,0,0,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e000000', endColorstr='#00000000',GradientType=1 );
+    }
+
+    header .content .item .info{
+        width: 55%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 110px;
+    }
+
+    header .content .item span{
+        margin-top: 40px;
+    }
+}
+
+@media all and (min-width:992px) {
+    header .content .item{
+        height: 640px;
+    }
+
+    header .content .item .img-produto img{
+        width: 400px;
+    }
+
+    header .content .item span{
+        font-size: 98px;
+    }
+}
+
+/* Sobre */
+section.sobre{
+    padding: 80px 0;
+}
+
+section.sobre img{
+    max-width: 100%;
+}
+
+section.sobre p{
+    color: #656b6f;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+section.sobre p:first-child{
+    margin-top: 70px;
+}
+
+section.sobre p:first-child::first-letter{
+    float: left;
+    font-size: 68px;
+    padding-right: 8px;
+    line-height: 60px;
+    font-family: 'Atlantic Bentley';
+}
+
+/* Receitas */
+section.receitas{
+    padding-top: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+section.receitas .gradiente{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3) url('../images/receitas.svg') no-repeat;
+    background-position: center -2px;
+    background-size: 800px auto;
+}
+
+section.receitas .carousel-receitas *{
+    outline: none;
+}
+
+section.receitas .carousel-receitas .seta-receita{
+    display: none !important;
+    width: 48px;
+    height: 68px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    top: 45%;
+    z-index: 10;
+    -webkit-transition: all 0.1s linear;
+       -moz-transition: all 0.1s linear;
+        -ms-transition: all 0.1s linear;
+         -o-transition: all 0.1s linear;
+}
+
+section.receitas .carousel-receitas .seta-receita:hover{
+    -webkit-transform: scale(1.05);
+       -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+         -o-transform: scale(1.05);
+}
+
+section.receitas .carousel-receitas .seta-receita.prev-receita{
+    left: 0;
+    border-radius: 30px 0 0 30px;
+    background-image: url('../images/seta-prev.png');
+}
+
+section.receitas .carousel-receitas .seta-receita.next-receita{
+    right: 0;
+    border-radius: 0 30px 30px 0;
+    background-image: url('../images/seta-next.png');
+}
+
+section.receitas .carousel-receitas .item{
+    width: 475px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    padding-top: 270px;
+    text-align: center;
+    position: relative;
+    border-radius: 40px;
+    background-color: #fff;
+}
+
+section.receitas .carousel-receitas .item .img-receita{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 230px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 40px 40px 0 0;
+}
+
+section.receitas .img-receita-fundo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100000;
+    background: url('../images/receita-1.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+    -webkit-transition: opacity 0.7s ease-out;
+       -moz-transition: opacity 0.7s ease-out;
+        -ms-transition: opacity 0.7s ease-out;
+         -o-transition: opacity 0.7s ease-out;
+    /*-webkit-filter: blur(5px);*/
+       /*-moz-filter: blur(5px);*/
+        /*-ms-filter: blur(5px);*/
+         /*-o-filter: blur(5px);*/
+            /*filter: blur(5px);*/
+}
+
+section.receitas .img-receita-fundo.esconder{
+    opacity: 0;
+}
+
+section.receitas .carousel-receitas .item h4{
+    color:  #383994;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+section.receitas .carousel-receitas .item strong{
+    margin: 20px 5px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+}
+
+section.receitas .carousel-receitas .item strong img{
+    margin-bottom: -4px;
+    display: inline-block;
+}
+
+section.receitas .carousel-receitas .item a{
+    color:  #202020;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media all and (min-width:576px) {
+    section.receitas{
+        padding-top: 220px;
+    }
+
+    section.receitas .gradiente{
+        background-size: 1200px auto;
+    }
+
+    section.receitas .carousel-receitas .item strong{
+        display: inline-block;
+    }
+}
+
+@media all and (min-width:768px) {
+    section.receitas .carousel-receitas .seta-receita{
+        display: block !important;
+    }
+}
+
+@media all and (min-width:1200px) {
+    section.receitas .gradiente{
+        background-size: 101% auto;
+    }
+}
